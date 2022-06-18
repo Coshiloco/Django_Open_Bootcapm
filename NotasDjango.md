@@ -117,3 +117,27 @@
     *Los comentarios dentro de las plantillas de DJango se hacen primero los de una sola linea :
         1.  {# Esto es un comentario en Django de una sola linea #}
         2. {% comment "Multilinea" %} Esto es un comentario Multilinea en Django {% endcomment %}
+
+# Archivos estaticos
+
+    * EL proposito es implemtar las hojas de estilo CSS y lso archivos que le añaden dinamismo a la pagina como JavaScript
+    * Primero tenemos que situarnos en el archivo settings.py
+    * Debajo del archivo settings.py tenemos que encontrar donde pone STATIC_URL = 'static/'
+    * Debajo de esto tenemos que poner STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "/var/www/static"],
+    * Con STATICFILES le estamos indicando que mire en los directorios
+    donde vamos a guardar nuestros archivos esticos como CSS y JavaScript como primer parametro que es donde se encuentran
+    *El segundo parametro le decimo que nos cargue los archivos y siempre es lo mismo
+    * {% load static %} este comando se carga en la plantilla que nos cargara el archivo que nosotros deseemos
+    * Posteriormente en esa plantilla hay que poner <link rel="stylesheet" href=" {% static 'style.css' %}" /> donde en el
+    href ponemos lo que se va a cargar el archivo en concreto
+
+# Herencia de plantillas
+
+    * Su uso es principalmente ahorrarnos el escribir condigo en lo que
+    son los templates que va a renderizar nuestro archivo views.py
+    * Aqui dentro de templates tenemos por suppuesto que hacer lo mismo para cargar archivos estaticos
+    * En el archivo que nso sirve como base tenemos que poner bloques para que el archivo que herede la plantilla que herede introduzca hay el codigo html que quiera {% block styles %}{% endblock styles %}
+    * Para heredar la plantilla  template que va a heredar tenemos que poner este comando al principio {% extends './layouts/base.html' %}
+    entre el string el path de donde se ubica el template o plantilla padre y asi cargaremos toda esa plantilla en nuestro template o plantilla hijo
