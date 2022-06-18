@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('herencia/', view=views.herencia, name="herencia")
+    path('herencia/', view=views.herencia, name="herencia"),
+    path('ejemploherencia/', view=views.ejemploherencia, name="ejemploherencia"),
+    path('otra/', view=views.otra, name="otra")
 ]
