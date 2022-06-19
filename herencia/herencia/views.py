@@ -15,3 +15,4 @@ def otra(request):
 
 def index(request):
     return render(request=request, template_name='index.html', context={})
+
