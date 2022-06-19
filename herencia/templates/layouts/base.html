@@ -11,16 +11,9 @@
     <title>{% block titles %}{% endblock titles %}</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Logo</li>
-        <li><a href="#">Herencia</a></li>
-        <li><a href="#">EjemploHerencia</a></li>
-        <li><a href="#">otra</a></li>
-      </ul>
-    </nav>
+    {% include 'layouts/partials/menu.html' %}
     <main>{% block content %}{% endblock content %}</main>
-    <footer>Todos los derechos son de PAblo Hurtado Gonzalo</footer>
+    {% include 'layouts/partials/footer.html' %} 
     {% block scripts %}{% endblock scripts %}
   </body>
 </html>

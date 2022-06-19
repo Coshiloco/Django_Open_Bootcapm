@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('herencia/', view=views.herencia, name="herencia"),
     path('ejemploherencia/', view=views.ejemploherencia, name="ejemploherencia"),
-    path('otra/', view=views.otra, name="otra")
+    path('otra/', view=views.otra, name="otra"),
+    path('', view=views.index, name="index")
 ]
