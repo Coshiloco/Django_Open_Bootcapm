@@ -1,4 +1,16 @@
+{% load static %}
 <footer>
-    <p>Footer</p>
-    <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
+    <img src="{% static 'img/logo.png' %}" width="90"></img>
+    <ul>
+        <li><a href="https://www.flaticon.com/free-icons/camera">Diseñador Logo: Flaticon</a></li>
+        <li><a href="https://www.w3schools.com/css/css_font.asp">Fuente de Texto</a></li>
+    </ul>
+    <ul>
+        <li><a href="{% url 'index' %}">Index</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://www.flaticon.com/free-icons/camera">Diseñador Logo: Flaticon</a></li>
+        <li><a href="https://www.w3schools.com/css/css_font.asp">Fuente de Texto</a></li>
+    </ul>
 </footer>
