@@ -147,4 +147,13 @@
     * Bien en el bloque de modularizacion lo que hacemos primero es iniciar un proyecto y dentro de ese proyecto 
     nos creamos un modulo con el comando python manage.py startapp (comentarios, nombre del modulo que DJango lo llama APP)
     
-    
+# Modelos
+    * Los modelos son las clases en Python que repsentan las instancias pero para hacer esto dentro del proyecto tenemos 
+    que crear una app que es otro bloque de codigo
+    que permite modularizar 
+    * Se hace con el comando python manage.py startapp nombre de la app se hace dentro del repositorio donde esta nuestro proyecto
+    * Una vez esto nos vamos al archivo models.py donde esta contenida los archivos de nuestra app hacemos la clase
+    que nos permite hacer el modelo
+    * Para generar el modelo tenemos que ejecutar el comando 
+    es python manage.py del projecto de modularizacion makemigrations
+    *Para geenrar el modelo en la base de datos tenemos que ejecutar el comando python manage.py migrations 
