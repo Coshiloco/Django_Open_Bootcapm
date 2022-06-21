@@ -141,3 +141,8 @@
     * En el archivo que nso sirve como base tenemos que poner bloques para que el archivo que herede la plantilla que herede introduzca hay el codigo html que quiera {% block styles %}{% endblock styles %}
     * Para heredar la plantilla  template que va a heredar tenemos que poner este comando al principio {% extends './layouts/base.html' %}
     entre el string el path de donde se ubica el template o plantilla padre y asi cargaremos toda esa plantilla en nuestro template o plantilla hijo
+
+# Bloque de modularizacion 
+
+    * Bien en el bloque de modularizacion lo que hacemos primero es iniciar un proyecto y dentro de ese proyecto 
+    nos creamos un modulo con el comando python manage.py startapp (comentarios, nombre del modulo que DJango lo llama APP)
