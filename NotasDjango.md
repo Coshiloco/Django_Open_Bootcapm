@@ -146,3 +146,5 @@
 
     * Bien en el bloque de modularizacion lo que hacemos primero es iniciar un proyecto y dentro de ese proyecto 
     nos creamos un modulo con el comando python manage.py startapp (comentarios, nombre del modulo que DJango lo llama APP)
+    
+    
