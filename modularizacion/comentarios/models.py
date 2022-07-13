@@ -8,7 +8,7 @@ class Coments(models.Model):
     score = models.IntegerField(default=3)
     comment = models.TextField(max_length=1000, null=True)
     date = models.DateField(null=True)
-    signature = models.CharField(max_length=100, default="Firma")
+    dia = models.BooleanField(null=True)
 
     def __str__(self):
         return self.name
