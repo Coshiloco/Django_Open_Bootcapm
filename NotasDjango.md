@@ -181,3 +181,24 @@
    tal como esta en esta linea pruebacomentario.save()
    * Otra forma de crear el objeto directamente es con la instruccion 
    Coment.objects.create(name="Alejandro", comment="Segunda forma de crear el objeto directamente")
+   * De la misma forma podemos crearnos otra vista que elimine los registros de la tabla
+   con una sentencia que es bastante parecida y que es
+    Coment.objects.filter(id=2).delete()
+# Estructura y claves foráneas
+    *Bien ahora nos generamos un proyecto nuevo de un blo
+    * este va a tener una app
+    *Esta va a tener un modelo en el que 
+    vamos a relacionar dos tablas
+    * Por tanto en la tanla en la que tenemos que introducir una clave
+    * Foranea lo que tenemos que hacer es añadirle un campo
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    tal que asi donde author le especificamos 
+    que es un campo de clave foranea dentro de los parentesis
+    tiene dos parametros uno la tabla que para nosotros es la clase
+    de donde queremos que venga la clave foranea 
+    y la otra es que cuando eliminamos la entrada para no generar
+    incoherencias que se elimine en cascada es decir el registro de la tabla que queremos
+    eliminar y el de la tabla donde esta la clave primaria de nuestra clave foreanea eliminandose el registro
+    de la otra tabla con el mismo id para no generar incoherencias
+# Seeding y paquetes
+    *
