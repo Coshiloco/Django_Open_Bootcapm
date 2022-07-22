@@ -159,3 +159,5 @@
     para que nos lo convierta a codigo sql
     * Para geenrar el modelo en la base de datos tenemos que ejecutar el comando python manage.py migrate para que nos lo pase a la base de datos
     python manage.py migrate para hacer la migracion a la base de datos.
+
+# Delegacion de rutas
