@@ -161,3 +161,14 @@
     python manage.py migrate para hacer la migracion a la base de datos.
 
 # Delegacion de rutas
+    *Vemos que el proyecto de django esta compuesto a su vez por apps
+    * Estas apps tienen su propio archivo de url.py y un archivo views.py
+    * Por lo que se tienen que enlazar con el proyecto principal
+    * POr lo que en el archivo de url.py del proyecto tenemos que incluir
+    * Esta sentencia path('comments/', include('comentarios.urls'))
+    * De donde las rutas van a aprtir todas la raiz comments/ y luego la ruta
+    que tengamos en la app en el archivo urls.py donde renderizaremos 
+    las vistas que correpondan al path como hemos hecho anterioremente
+
+# Creación y borrado de datos
+   

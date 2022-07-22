@@ -6,5 +6,6 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('testapp/', view=views.test, name="test")
+    path('testapp/', view=views.test, name="test"),
+    path('create/', view=views.create,  name="create")
 ]
