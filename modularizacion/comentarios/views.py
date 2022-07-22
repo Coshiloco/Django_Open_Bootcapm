@@ -24,5 +24,5 @@ def delete(request):
     #comment = Coment.objects.get(id=1)
     # comment.delete()
     # Segunda forma
-    Coment.objects.filter(id=1).delete()
+    Coment.objects.filter(id=2).delete()
     return HttpResponse("Ruta para probar el borrado de comentarios")
