@@ -7,5 +7,6 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('testapp/', view=views.test, name="test"),
-    path('create/', view=views.create,  name="create")
+    path('create/', view=views.create,  name="create"),
+    path('delete/', view=views.delete, name="delete")
 ]

@@ -169,6 +169,15 @@
     * De donde las rutas van a aprtir todas la raiz comments/ y luego la ruta
     que tengamos en la app en el archivo urls.py donde renderizaremos 
     las vistas que correpondan al path como hemos hecho anterioremente
-
 # Creación y borrado de datos
-   
+   *En el archivo de views.py para hacer la prueba nos hemos creado 
+   un objeto de python cuyo constructor son los campos de la tabla 
+   donde guardaremos los datos
+   * En nuestro ejemplo le hemos puesto los campos que hacen falta 
+   los que le hemos puesto que puedan ser null podemos no ponerlos 
+   pruebacomentario = Coment(name="Bauty", score=100, comment="Bauty es hermoso")
+   * La instruccion para que una vez se nos renderize la logica 
+   es coger ese objeto y aplicarle la instruccion
+   tal como esta en esta linea pruebacomentario.save()
+   * Otra forma de crear el objeto directamente es con la instruccion 
+   Coment.objects.create(name="Alejandro", comment="Segunda forma de crear el objeto directamente")
