@@ -201,4 +201,4 @@
     eliminar y el de la tabla donde esta la clave primaria de nuestra clave foreanea eliminandose el registro
     de la otra tabla con el mismo id para no generar incoherencias
 # Seeding y paquetes
-    *
+    
