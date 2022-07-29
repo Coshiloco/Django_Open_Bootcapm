@@ -5,7 +5,7 @@ from .models import Cargo, Empleado
 
 def creardatos(request):
     empleadouno = Empleado.objects.create(
-    name="Bauty", comment="pablohurtado@gmail.com")
+    name="Bauty", email="pablohurtado@gmail.com")
     cargoempleadouno = Cargo.objects.create(empleado=empleadouno,
     headline='Prueba de instanciacion de claves foraneas',
     body_text='Si se crea con exito soy la prueba',
