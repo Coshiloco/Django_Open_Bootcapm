@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Cargo, Empleado
 # Create your views here.
@@ -12,5 +13,5 @@ def creardatos(request):
     rating=8)
 
     resultadobusqueda = Empleado.objects.get(id=1)
-
-    return resultadobusqueda
+    
+    return HttpResponse(f"{resultadobusqueda}")
